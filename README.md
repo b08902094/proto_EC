@@ -20,7 +20,7 @@
 ### アプリケーション詳細設計
 - [リンク](https://docs.google.com/spreadsheets/d/1vDIm9VUg3mhyK4FxgW32DzQNDbatntFvFRIi7vPp4nk/edit?usp=sharing)
 - 画面は、カリキュラムと同じワイヤーフレームを参照してください。
-　- [Marika Takahashi](Note_Sep_28_2023_at_11_02_47_PM.pdf)　後々、リンクを載せてください。
+  - [Marika Takahashi](Note_Sep_28_2023_at_11_02_47_PM.pdf)　後々、リンクを載せてください。
   - [例_admin](https://s3-ap-northeast-1.amazonaws.com/wals/curriculum/ec_site/design_documents/wire_admin.pdf)
   - [例_customer](https://s3-ap-northeast-1.amazonaws.com/wals/curriculum/ec_site/design_documents/wire_ec.pdf)
 
