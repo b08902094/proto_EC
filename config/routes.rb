@@ -17,6 +17,12 @@ Rails.application.routes.draw do
   scope module: :public do
     root to: 'homes#top'
     get 'homes/about'
+    resources :customers, only: [:show] do
+      member do
+        get 'confirm'
+        patch 'withdraw'
+      end
+    end
   end
   
   namespace :admin do
