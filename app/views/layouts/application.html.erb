@@ -63,12 +63,12 @@
           </ul>
           <% if admin_signed_in? %>
             <form class="form-inline my-1 ml-auto">
-              <%= form_with url: admin_items_path, method: :get do |f| %>
-                <%= f.text_field :search, placeholder: "Search", class:"form-control" %>
-                <%= button_tag(type: 'submit', class: 'btn btn-outline-secondary') do %>
+              <%#= form_with url: admin_items_path, method: :get do |f| %>
+                <%#= f.text_field :search, placeholder: "Search", class:"form-control" %>
+                <%#= button_tag(type: 'submit', class: 'btn btn-outline-secondary') do %>
                   <i class="fa fa-search"></i>
-                <% end %>
-              <% end %>
+                <%# end %>
+              <%# end %>
             </form>
           <% end %>
         </div>
