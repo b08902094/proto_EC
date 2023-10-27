@@ -13,4 +13,12 @@ class Customer < ApplicationRecord
   validates :address, presence: true
   validates :phone_number, presence: true, format: { with: /\A\d{10,11}\z/ }
 
+  def full_name
+    last_name + " " + first_name
+  end
+
+  def full_name_kana
+    last_name_kana + " " + first_name_kana
+  end
+
 end
