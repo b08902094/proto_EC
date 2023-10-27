@@ -1,13 +1,4 @@
 Rails.application.routes.draw do
-  namespace :admin do
-    get 'customers/index'
-    get 'customers/show'
-    get 'customers/edit'
-  end
-  namespace :public do
-    get 'customers/show'
-    get 'customers/edit'
-  end
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 
   # 顧客用
@@ -31,12 +22,20 @@ Rails.application.routes.draw do
   scope module: :public do
     root to: 'homes#top'
     get 'homes/about'
-    resources :customers, only: [:show, :edit, :update] do
-      member do
-        get 'confirm'
-        patch 'withdraw'
-      end
-    end
+    # resources :customers, only: [:show, :edit, :update] do
+    #   member do
+    #     get 'confirm'
+    #     patch 'withdraw'
+    #   end
+    # end
+    get 'customers/mypage' => 'customers#show', as: 'mypage'
+    # customers/editのようにするとdeviseのルーティングとかぶってしまうためinformationを付け加えている。
+    get 'customers/information/edit' => 'customers#edit', as: 'edit_information'
+    patch 'customers/information' => 'customers#update', as: 'update_information'
+    get 'customers/unsubscribe' => 'customers#unsubscribe', as: 'confirm_unsubscribe'
+    put 'customers/information' => 'customers#update'
+    patch 'customers/withdraw' => 'customers#withdraw', as: 'withdraw_customer'
+ 
   end
 
 end
