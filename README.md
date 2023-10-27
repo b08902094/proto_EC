@@ -6,9 +6,15 @@
 ## 準備(リポジトリのfork)
 - このリポジトリをforkし、自分のアカウントで使うリポジトリを作成してください。
 
-## 提出方法
+## push方法
 - branchは**○○○○**で行ってください。
-- 提出するときはfork先のリポジトリURLをワークフローから提出してください。
+- git clone sshアドレス
+- bundle install
+- rails webpacker:install
+- rails webpacker:compile
+- rails db:migrate
+- rails db:seed
+　これでローカル環境で正常に動くと思います。
 
 ## 設計書
 ### データベース設計
