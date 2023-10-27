@@ -8,15 +8,23 @@
 
 # Admin.create!(email: 'admin@example.com', password: 'password')
 
-Customer.create!(
-  password: 'aaaaaa',
-  last_name: '令和',
-  first_name: '道子',
-  last_name_kana: 'レイワ',
-  first_name_kana: 'ミチコ',
-  email: "sample@example.com",
-  post_code: '0000000',
-  address: '東京都渋谷区神園町0-0',
-  phone_number: '0000000000',
-  is_active: true
-)
+# Customer.create!(
+#   password: 'aaaaaa',
+#   last_name: '令和',
+#   first_name: '道子',
+#   last_name_kana: 'レイワ',
+#   first_name_kana: 'ミチコ',
+#   email: "sample@example.com",
+#   post_code: '0000000',
+#   address: '東京都渋谷区神園町0-0',
+#   phone_number: '0000000000',
+#   is_active: true
+# )
+
+Genre.create!([
+    { name: "ケーキ" },
+    { name: "焼き菓子" },
+    { name: "プリン" },
+    { name: "和菓子" },
+    { name: "アイス" }
+])
